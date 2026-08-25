@@ -2,9 +2,12 @@
 
 The rest of the repository holds the configuration that produced the reported
 results: one script per stage, the one the deployed system actually ran. This
-folder holds **everything else that was built and tried** - 124 scripts covering
-alternatives that were evaluated and set aside, ablations, the iterations between
-them, and the real-robot trial code that was run on the day.
+folder holds **everything else that was built and tried** - 192 scripts covering
+alternatives that were evaluated and set aside, ablations, the iterations
+between them, and the versions used during testing.
+
+Several of these are as-executed versions rather than tidied copies: taught
+poses, hard-coded slot lists and all.
 
 It is here because the finished pipeline hides the work. Reading only
 `vira_coarse_to_fine/` and `complete_system/` you would not know that eight
@@ -38,6 +41,10 @@ exist.
 | [`qwen_port/`](qwen_port/) | 1 | Converting the dataset to Qwen format. No Qwen result reached the write-up. |
 | [`robot_utilities/`](robot_utilities/) | 21 | Real-robot tools: joint moves, state reads, IK, camera positioning for SAM-6D, the split client/server setup. |
 | [`ot2_control/`](ot2_control/) | 4 | Driving the OT-2 liquid handler itself between insertion trials. |
+| [`control_loop_variants/`](control_loop_variants/) | 11 | Alignment loops as run on the robot: eleven crop and server combinations. |
+| [`trolley_pipeline/`](trolley_pipeline/) | 33 | Trolley sequence revisions. |
+| [`capture_variants/`](capture_variants/) | 17 | Dataset capture scripts as run. |
+| [`calibration_variants/`](calibration_variants/) | 7 | Earlier hand-eye solver and pose-recording revisions. |
 
 ## Threads worth knowing about
 

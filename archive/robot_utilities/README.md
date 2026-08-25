@@ -8,7 +8,7 @@ reachability, back out of the deck, record a human demonstration.
 SAM-6D can observe it, `_video` variants recording as they go. `ik_solver_rtb.py`
 wraps the roboticstoolbox IK used by the pose-estimation path.
 `rack_client_robot.py` / `rack_server_robot.py` are the split-machine setup,
-where perception runs on the GPU box and motion on the robot PC.
+where perception and motion run on separate machines.
 
 **These move a real robot immediately**, and their poses are taught for the
 original cell. The three maintained equivalents are in `../../robot_utils/`.

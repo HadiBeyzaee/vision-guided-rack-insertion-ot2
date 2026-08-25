@@ -1,9 +1,8 @@
 import os
 
 # --- Robot-PC settings (override in your shell or a .env file) ---------
-# These scripts ran on the robot PC, where the account was "panda", while
-# perception ran on a separate GPU box. The paths below were absolute on
-# that machine; they are variables here so the split works anywhere.
+# Perception and motion ran on separate machines. The paths below were
+# absolute on one of them; they are variables here so the split works anywhere.
 PANDA_HOSTNAME   = os.environ.get("PANDA_HOSTNAME", "192.168.0.1")
 INFERENCE_HOST   = os.environ.get("INFERENCE_HOST", "127.0.0.1")
 REALSENSE_SERIAL = os.environ.get("REALSENSE_SERIAL", "")
