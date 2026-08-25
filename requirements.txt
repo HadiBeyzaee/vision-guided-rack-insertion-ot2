@@ -1,0 +1,31 @@
+# Inference and training
+torch
+torchvision
+transformers
+peft
+deepspeed
+accelerate
+flask
+requests
+pillow
+numpy
+opencv-python
+matplotlib
+tqdm
+albumentations           # used by complete_system/align_and_insert_cnn.py
+
+# Robot and camera
+panda-python             # panda_py; must match your libfranka build
+pyrealsense2
+scipy
+roboticstoolbox-python
+spatialmath-python
+
+# Task interface
+slack_sdk
+
+# NOTE: ROS 2 Humble supplies rclpy, cv_bridge, sensor_msgs and geometry_msgs.
+# Do not pip install those.
+#
+# LLaVA is used as a source checkout, not a package. Clone
+# https://github.com/haotian-liu/LLaVA and point LLAVA_REPO at it.

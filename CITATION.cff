@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+title: Vision-Guided Rack Insertion into the Opentrons OT-2
+message: >-
+  Code for the OT-2 rack insertion system
+  "An End-to-End Robotic System for High-Precision Rack Insertion
+  in Automated Laboratories".
+type: software
+authors:
+  - family-names: Beyzaee Juneghani
+    given-names: Hadi
+    affiliation: Department of Chemistry, University of Liverpool
+license: MIT

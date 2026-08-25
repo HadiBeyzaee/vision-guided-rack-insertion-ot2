@@ -1,0 +1,45 @@
+# Secrets and machine-specific settings
+.env
+*.pem
+*.key
+id_rsa*
+credentials*
+
+# Model weights and datasets
+checkpoints/
+*.pth
+*.safetensors
+*.bin
+data/
+images/
+color_images/
+grayscale_depth_images/
+color_mapped_depth_images/
+error_data.txt
+*.json.gz
+
+# Run output
+videos/
+run_videos/
+run_logs/
+rack_replacement_videos/
+output/
+logs/
+*.avi
+*.mp4
+*_per_class_accuracy.png
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# OS and editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
